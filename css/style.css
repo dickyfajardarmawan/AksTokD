@@ -13,6 +13,8 @@
     background-image: url('../img/bg-masthead-dark.jpg');
     background-position: 50% -50px;
     background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0;
 }
 
 .display-4 {
@@ -27,4 +29,16 @@
 .btn-danger {
     background-color: #b80000;
     border: 0;
+}
+
+
+/* mobile view */
+
+@media only screen and (max-width: 600px) {
+    .display-4 {
+        font-size: 20px;
+    }
+    .lead {
+        font-size: 12px;
+    }
 }

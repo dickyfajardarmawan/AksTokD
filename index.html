@@ -5,31 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AksesToko</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css?n=1">
 </head>
 
 <body>
+    <!-- header -->
     <div class="container-fluid d-flex justify-content-between align-items-center p-2">
         <img src="img/logo-at.png" width="150px" alt="">
         <div class="menu-landing-page">
-            <a href="javascript:void(0)">Masuk</a>
+            <a data-fancybox data-src="#hidden-content" href="javascript:void(0)">Masuk</a>
             <a href="javascript:void(0)">Daftar</a>
         </div>
     </div>
 
-    <div class="jumbotron">
-        <h1 class="display-4">CEPAT. MUDAH. <br> LEBIH MENGUNTUNGKAN</h1>
-        <p class="lead">Selamat datang di Solusi Digital Semen Indonesia. Segera daftar dengan ID Bisnis Kokoh Anda!</p>
-        <hr class="my-4" style="border-top: 1px solid #fff;width: 50%;">
-        <a class="btn btn-danger btn-lg" href="#" role="button">Daftarkan Sekarang</a>
+    <!-- banner -->
+    <div class="jumbotron ">
+        <div class="w3-animate-bottom">
+            <h1 class="display-4 ">CEPAT. MUDAH. <br> LEBIH MENGUNTUNGKAN</h1>
+            <p class="lead">Selamat datang di Solusi Digital Semen Indonesia. Segera daftar dengan ID Bisnis Kokoh Anda!</p>
+            <hr class="my-4" style="border-top: 1px solid #fff;width: 50%;">
+            <a class="btn btn-danger btn-lg" href="#" role="button">Daftarkan Sekarang</a>
+        </div>
     </div>
 
+    <!-- konten #1 -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12 text-center w3-animate-opacity">
+                <h1>Tentang Solusi Digital Semen Indonesia</h1>
+                <p>Semen Indonesia berkomitmen untuk selalu memberikan layanan terbaik kepada mitra kami dengan menggunakan teknologi dan integrasi semua proses ke dalam satu solusi. Anda dapat melihat dan memesan semua produk Semen Indonesia, membayar dengan
+                    berbagai metode pembayaran, memperbarui alamat pengiriman, mendapatkan diskon tambahan, semua di satu tempat.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- konten #2 -->
+    <div class="container text-center">
+        <h1 data-aos="fade-up">Cara Penggunaan</h1>
+        <div class="row" data-aos="fade-up">
+            <div class="col-md-4">
+                <img src="img/langkah-1.png" alt="">
+                <h4 class="text-danger">Langkah 1</h4>
+                <p class="text-secondary">Daftar dengan ID Bisnis Kokoh Anda</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/langkah-2.png" alt="">
+                <h4 class="text-danger">Langkah 2</h4>
+                <p class="text-secondary">Pilih & Bayar pesanan Anda</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/langkah-3.png" alt="">
+                <h4 class="text-danger">Langkah 3</h4>
+                <p class="text-secondary">Pesanan dikirim ke toko atau proyek</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- konten #3 -->
+    <div class="container text-center my-5">
+        <h1 data-aos="fade-right">Keuntungan</h1>
+        <div class="row" data-aos="fade-left">
+            <div class="col-md-4">
+                <img src="img/lebih-cepat.png" alt="">
+                <p class="text-secondary">Pengiriman langsung dan dapat dilacak, ke toko atau proyek.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/lebih-mudah.png" alt="">
+                <p class="text-secondary">Lihat semua produk Semen Indonesia lengkap dengan stok, bayar menggunakan berbagai metode pembayaran, diskon menarik dan persyaratan mudah.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/lebih-menguntungkan.png" alt="">
+                <p class="text-secondary">Lihat hadiah kontraktual Anda.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal masuk -->
+    <div style="display: none;" id="hidden-content">
+        <div class="text-center mb-3">
+            <img src="img/logo-at.png" width="150px" alt="">
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">ID Bisnis Kokoh / Email / Nomor Ponsel</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Kata Sandi</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-danger py-2 w-100 mt-3">Masuk</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="px-3 py-4 text-center" style="background-color: rgb(73, 73, 73);">
+        <p style="color: #fff;margin: 0;">© 2020 PT Sinergi Informatika Semen Indonesia, anak usaha dari PT Semen Indonesia TBK. All rights reserved.</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
