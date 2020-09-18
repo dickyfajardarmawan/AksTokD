@@ -1,0 +1,30 @@
+.menu-landing-page a {
+    color: rgb(98, 98, 98);
+    padding: 10px;
+    font-weight: 600;
+}
+
+.menu-landing-page a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.jumbotron {
+    background-image: url('../img/bg-masthead-dark.jpg');
+    background-position: 50% -50px;
+    background-size: cover;
+}
+
+.display-4 {
+    font-weight: 600;
+    color: #fff;
+}
+
+.lead {
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #b80000;
+    border: 0;
+}
